@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color:white;
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+    height: 500px;
+    max-width: 800px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    /* border: 1px black solid; */
+}
+
+.main--party {
+    -webkit-animation: rainbow-border 1s infinite; 
+}
+
+.container--die {
+    display: grid;
+    width: 550px;
+    height: 200px;
+    /* border: red 1px solid; */
+    padding: 40px;
+    margin: auto;
+    gap: 5px 5px;
+    grid: 50px / auto auto auto auto auto;
+    align-items: center;
+    
+}
+
+
+.party-dice {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+    color: grey;
+    -webkit-animation: rainbow 1s infinite; 
+    -webkit-animation: rainbow-border 0.5s infinite;
+}
+
+.held--party-dice {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+    color: white;
+    border: grey 1px solid;
+    -webkit-animation: rainbow-background 1s infinite;
+}
+
+.work-dice {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    color: black;
+    border: black 1px solid;
+    box-shadow: 2px -2px grey;
+}
+
+.held--work-dice {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    color: white;
+    background-color: grey;
+    border: black 1px solid;
+    box-shadow: 2px -2px black;
+}
+
+.rainbow-dice {
+    -webkit-animation: rainbow 1s infinite; 
+}
+
+.dice-number {
+    margin: auto;
+    font-size: 25px;
+}
+ .title--work {
+    display: flex;
+    font-family: 'Fira Code', monospace;
+    font-size: 30px; 
+    margin: 15px;
+    text-transform: lowercase;
+     
+ }
+.title--party {
+    display: flex;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px; 
+    margin: 5px;
+    -webkit-animation: rainbow 1s infinite; 
+    text-shadow: 4px 4px 2px #000000;
+}
+
+.game--description {
+    font-size: 15px;
+    text-align: center;
+}
+
+.button--party-roll {
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin: auto;
+    color: white;
+    -webkit-animation: rainbow-background 0.5s infinite;
+    /* border: 1px grey solid; */
+}
+
+.button--work-roll {
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    color: black;
+    text-transform: lowercase;
+    font-family: 'Fira Code', monospace;
+    box-shadow: 2px -2px black;
+}
+
+.button--mode {
+    height: 50px;
+    width: 150px;
+    margin: 10px 50px;
+    background-color: white;
+}
+
+.work {
+    font-family: 'Fira Code', monospace;
+}
+
+.party {
+    position: relative;
+    top: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: white;
+    border: none;
+    -webkit-animation: rainbow-background 60s infinite; 
+    border-radius: 10px;
+}
+
+.warning--strobe {
+    position: relative;
+    top: 5px;
+    font-family: none;
+    font-size: 12px;
+    margin: 0px;
+}
+
+@-webkit-keyframes rainbow{
+  0%{color: orange;}  
+  10%{color: purple;} 
+  20%{color: red;}
+  30%{color: CadetBlue;}
+  40%{color: yellow;}
+  50%{color: coral;}
+  60%{color: seagreen;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+  100%{color: orange;}
+}
+@-webkit-keyframes rainbow-background{
+  0%{background-color: red;}  
+  10%{background-color: purple;} 
+  20%{background-color: orange;}
+  30%{background-color: CadetBlue;}
+  40%{background-color: yellow;}
+  50%{background-color: coral;}
+  60%{background-color: green;}
+  70%{background-color: cyan;}
+  80%{background-color: DeepPink;}
+  90%{background-color: DodgerBlue;}
+  100%{background-color: red;}
+}
+
+@-webkit-keyframes rainbow-border{
+  0%{border: solid 1px orange;}  
+  10%{border: solid 1px purple;} 
+  20%{border: solid 1px red;}
+  30%{border: solid 1px CadetBlue;}
+  40%{border: solid 1px yellow;}
+  50%{border: solid 1px coral;}
+  60%{border: solid 1px green;}
+  70%{border: solid 1px cyan;}
+  80%{border: solid 1px DeepPink;}
+  90%{border: solid 1px DodgerBlue;}
+  100%{border: solid 1px orange;}
+}
