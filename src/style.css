@@ -149,9 +149,9 @@ main {
     top: 5px;
     font-family: 'Press Start 2P', cursive;
     font-size: 10px;
-    color: white;
-    border: none;
-    -webkit-animation: rainbow-background 60s infinite; 
+    color: black;
+    border: 1 px black solid;
+    -webkit-animation: rainbow-background 10s infinite; 
     border-radius: 10px;
 }
 
@@ -163,7 +163,7 @@ main {
     margin: 0px;
 }
 
-@-webkit-keyframes rainbow{
+@keyframes rainbow{
   0%{color: orange;}  
   10%{color: purple;} 
   20%{color: red;}
@@ -176,7 +176,7 @@ main {
   90%{color: DodgerBlue;}
   100%{color: orange;}
 }
-@-webkit-keyframes rainbow-background{
+@keyframes rainbow-background{
   0%{background-color: red;}  
   10%{background-color: purple;} 
   20%{background-color: orange;}
@@ -190,7 +190,7 @@ main {
   100%{background-color: red;}
 }
 
-@-webkit-keyframes rainbow-border{
+@keyframes rainbow-border{
   0%{border: solid 1px orange;}  
   10%{border: solid 1px purple;} 
   20%{border: solid 1px red;}

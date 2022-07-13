@@ -1,4 +1,4 @@
-import './App.css';
+import './style.css';
 import React, {useState} from "react"
 import Home from "./Pages/Home"
 import Game from "./Pages/Game"
@@ -13,8 +13,8 @@ function App() {
             return <Game mode="PARTY" setPage={setPage}/>
         case "PAGE--WORK":
             return <Game mode="WORK" setPage={setPage}/>
-        case "PAGE--WIN":
-            return <Win setPage={setPage}/>
+        // case "PAGE--WIN":
+        //     return <Win setPage={setPage}/>
         
     }
 }

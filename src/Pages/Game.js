@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react" 
-import Die from "..Components/Die"
+import Die from "../Components/Die"
 
 export default function Game(props) {
     let initArr;
