@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react" 
 import Die from "../Components/Die"
-
+import '../style.css'
 export default function Game(props) {
     let initArr;
     const [dieCount, setDieCount] = React.useState(0);
@@ -81,6 +81,7 @@ export default function Game(props) {
     
     return (
         <main className={props.mode === 'PARTY' ? "main--party" : "main--work"}>
+            {/* <embed src="../Rave Until The Night is Over (Cyber Techno Mix).mp3" loop="true" autostart="true" width="2" height="0"></embed> */}
             <section className={props.mode === "PARTY" ? "title--party" : "title--work"}>
                 <h1> T </h1>
                 <h1> E </h1>
