@@ -1,4 +1,4 @@
-import './style.css';
+import './style.css'
 import React, {useState} from "react"
 import Home from "./Pages/Home"
 import Game from "./Pages/Game"
